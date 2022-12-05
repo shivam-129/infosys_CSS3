@@ -1,0 +1,27 @@
+1. inline
+2. internal
+
+
+3. external
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+----------------
+
+4.Importing Style Sheets
+
+<style type="text/css">
+     @import url("http://www.xyz.com/style.css")
+</style>
+
+
+If you need to import this style.css file within another CSS file say sample.css file, then you can import as shown below
+
+@import url('style.css')
+div {
+  border: lightgrey dashed 3px;
+  padding: 20px;
+  margin: 60px;
+  width: 220px;
+  height: 125px;
+}

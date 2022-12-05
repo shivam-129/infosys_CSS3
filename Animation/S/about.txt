@@ -1,0 +1,9 @@
+Problem Statement:
+
+Add animation to the home page and accomplish the below activity
+
+For class flip2, flip3, flip4 give the animation-name as flip2, flip3, flip4 respectively. The animation duration should be 6s, 8s, 10s respectively. Give a suitable value for the animation timing function for each class and make the animation run infinitely.
+
+Apply suitable margin-top values to flip2, flip3, and flip4 keyframes at 55%, 71%, and 80% respectively to achieve the animation effect shown below
+
+The web page should look as shown below after adding animation

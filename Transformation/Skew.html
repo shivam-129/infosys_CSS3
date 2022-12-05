@@ -1,0 +1,48 @@
+<!-- CSS3 skew() function is used to turn/skew any element to any angle.
+
+The turning/skewing is dependent on the parameters specified for the vertical & horizontal axis.
+
+Syntax: skew(x,y) -> skews the element from x degrees from the x-axis & y- degrees from the y-axis.
+
+if the y-axis value is not specified then it has a zero value.
+
+To skew an element across a single axis, we can use skewX() and skewY() functions.
+
+Example:
+
+skew(20deg) -> skew an element by 20 degrees across x-axis.
+
+skew(30deg, 10deg) -> skews an element by 30 degrees across x-axis and 10 degrees across y-axis.
+
+skewX(15deg) -> skews an element by 15 degrees across x-axis.
+
+skewY(45deg) -> skews an element by 45 degrees across y-axis. -->
+
+
+<html>
+<head>
+    <title>Rotation Demo</title>
+	<style>
+        img
+{
+width:200px;
+height:200px;
+border:1px solid #440000;
+}
+img#skew
+{
+width:200px;
+height:200px;
+border:1px solid #440000;
+margin-top:70px;
+transform:skew(30deg,20deg);
+}
+
+    </style>
+</head>
+<body>
+<br />
+<img src="images/Toy.jpg" alt="Toy"></img>
+<img id="skew" src="images/Toy.jpg" alt="ToySkew"></img>
+</body>
+</html>

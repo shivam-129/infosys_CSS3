@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Font properties</title> 
+  <style>
+    .fontfamily {
+  font-family: "comic sans ms", Arial;
+}
+.customFont {
+  font-family: navBrandFont;
+}
+.fontstyle {
+  font-style: italic;
+}
+.fontvariant {
+  font-variant: small-caps;
+}
+.fontweight {
+  font-weight: bold;
+}
+.lineHeight {
+  line-height: 40px;
+}
+@font-face {
+  font-family: navBrandFont;
+  src: url(blackjack.otf);
+}
+
+
+
+
+
+
+#login_form
+{
+    width: 400px;
+    height: 300px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid rgba(128,128,128,0.17);//#808080;
+    border-radius:20px;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+ }
+@font-face
+{
+font-family: myFirstFont1;
+src: url('Pacifico.ttf'); 
+}
+h1 
+{
+    text-align: center;
+    margin: 0 0 20px;
+    font-family:myFirstFont;
+    // text-shadow: 3px 3px 2px #3F51B5, -3px -3px 2px #E91E63;
+	text-shadow: 0px 0px 10px rgba(255,0,0,1);
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid rgba(128,128,128,0.17);//grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 20%;
+    height:22%;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont1;
+    color: #fff;
+    background-color: #4d90fe;
+    border-radius:20px;
+} 
+input:focus
+{
+	outline:0;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+} 
+a
+{
+	font-family:myFirstFont;
+}
+
+
+  </style>
+</head> 
+<body> 
+    <h1 class="fontfamily">Business</h1> 
+    <p class="fontvariant">Most of the organizations adopt a sustainable approach to business. Organization's are aware that growth is directly proportional to the well being of employees and business partners, local communities and the environment.</p> 
+    <h2 class="fontweight customFont">Technology</h2> 
+    <p class="lineHeight">Technology plays vital role on business operations. Technology helps in automating lot of processes that helps in increasing  productivity</p> 
+    <footer class="fontstyle">Copyright &copy; Copyright. All rights reserved.</footer> 
+
+
+    <form id="login_form">
+        <h1>Learners Login</h1>
+        <input type="email" placeholder="Email" required="">
+        <input type="password" placeholder="Enter your password" required="">                 
+        <input id="login_button" type="submit" value="Login"></input> <br><br>
+        <a href="forgotpassword.html">Forgot password?</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="signup.html">Create account</a>
+    </form>
+</body> 
+</html> 

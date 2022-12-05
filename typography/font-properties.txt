@@ -1,0 +1,48 @@
+The font property is a shorthand for font-style, font-variant, font-weight, font-stretch, font-size, line-height, and font-family
+
+font-family: Specifies the font-family. Values can be web-safe fonts.
+
+font-family: "comic sans ms", Arial;
+font-style: Specifies the style of the font. Values can be normal (default), italic, oblique
+
+font-style: italic;
+font-variant: Specifies the variant of the font. Values can be normal (default) and small-caps
+
+font-variant: small-caps;
+ 
+
+
+font-size: Specifies the size of the font. Values can be x-small, small, medium, large, and can be a specific number with pixels unit.
+font-size: x-small;
+font-size: 20px;
+
+font-weight: Specifies the weight of the font. Values can be normal, bold, bolder, light, x-large.
+font-weight: bold;
+
+line-height: Specifies the height of the line
+line-height: 10px;
+line-height: 1cm;
+line-height: 0.5;
+
+When line-height is specified without unit, then the number will be multiplied with font-size.
+
+
+
+Custom Font
+
+We can specify a custom font using the @font-face rule 
+
+Web fonts allow developers/designers to include fonts that are not installed on the user's computer.
+
+The @font-face rule helps in loading custom fonts on a webpage. It instructs the browser to download the custom font specified in the style sheet from where it is hosted and display it.
+
+We can create a custom font file using online tools or download the available fonts from the internet, and store it on the server. Whenever needed the font file will be downloaded.
+
+Assign a name to our custom font and specify the source of our font file.
+
+syntax 
+
+@font-face {
+  font-family: name;
+  src: url(“pathofthecustomfontfile.”);
+}

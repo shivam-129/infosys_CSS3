@@ -1,0 +1,37 @@
+<style>
+
+body {
+  width: 500px;
+  height: 300px;
+  border: 2px solid red;
+}
+</style>
+
+<h1>Train Reservation Login</h1> 
+	<p style="font-size: 20px;"> Train reservation system website can be used to book trains for different destinations.<br>
+		<span style="font-size: 80%;">Please login to book your train.</span> 
+	</p> 
+
+<!-- The font-size of the paragraph is 20px and the span is applied with a font-size of 80%.
+     Since span is the child element of the span element, 
+    the font-size of the span will be 16px(80% of 20px)
+
+    80% of 20px  = 16px
+If the span is not applied with font-size then it will inherit from the paragraph and the font-size of p will be 20px.
+
+Observe the below code -->
+
+<body>
+<h1>Train Reservation Login</h1> 
+	<p style="font-size: 20px;"> Train reservation system website can be used to book trains for different destinations.<br>
+		<span style="font-size: 80%;">Please login to book your train.</span> 
+	</p> 
+<form style="border: inherit;" id="login_form"><br>
+    Enter your Username: <input type="text"><br><br>
+    Enter your Password: <input type="password"><br><br>                
+    <input id="login_button" type="submit" value="Login"></input> 
+	<input id="reset_button" type="submit" value="Reset"></input>
+</form>
+</body>
+
+

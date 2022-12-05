@@ -1,0 +1,79 @@
+Let us now understand why we need to take care of vulnerabilities in CSS.
+
+There is a possibility of injecting malicious code through CSS. If stylesheets in a web application are weak, then an attacker can add some styles which can do modification on the appearance of the web page.
+
+Therefore there is a need to find the attacks possible in CSS and their preventive measures to defend against those attacks.
+
+
+
+As a web developer, we need to take care of writing preventive measures for all possible vulnerabilities in web pages. As we use CSS for styling those web pages, we should be aware of all possible vulnerabilities in this language. Let us now see what are the security risks possible in CSS.
+
+CSS Security 
+
+Cascading StyleSheet is used to style the web pages. Mostly CSS files will be treated as the least priority in terms of security. But there are risks involved with these files as well. Many web developers will use a global stylesheet file to store all styles related to a web application. This approach involves few risks associated with it. An attacker can view all the styles using the view source option in the browser and can understand the features of the application by seeing the CSS class names. 
+
+For example, if a developer has created class names as ".addUser", ".addAdmin", etc., an attacker will get some information that styles are being applied based on roles. This information can be favorable to the attacker.
+
+Another risk possible is an attacker can even inject some malicious styles into the page which can lead to some undesired operations like changing the appearance of a web app, understanding the sensitive information of the application which can lead to data theft, etc.,
+
+Following is the CSS vulnerability we are going to discuss further:
+
+CSS Injection
+
+Let us now understand this vulnerability and its mitigation with examples.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+security checklist
+
+
+
+
+
+Every web developer will be using CSS for styling their web page. Modern web technologies made CSS to get used for malicious purposes as well.
+
+Let us understand what are the security best practices that the developer should follow in order to avoid vulnerabilities in web applications.
+
+Sanitize user inputs
+
+Any input from the user is to be assumed as untrusted. Proper sanitization of input data provides protection from different kinds of attacks like CSS Injection, etc.
+
+Do away with unused CSS from the production build
+
+It is better to take away unused references in the CSS code to confirm that sensitive information is not visible
+
+Eliminate comments from the final code
+
+Avoid the usage of comments to store sensitive information in the HTML as it is entirely visible. Any unwanted comment is to be removed before the production build. Modern browsers can inspect the commented code and sensitive information can be retrieved.
+
+Refer to the latest security news
+
+Keep checking the latest news in the security area as the internet is growing and new security features and techniques may get implemented every day.
+
+Use a Content Security Policy (CSP)
+
+With the aim of protecting the application from potential dangers, use a Content Security Policy to delimit the assets that are permissible to be added to the application
+
+Make sure that all CSS files are isolated by setting the appropriate access level. We need to specify whom to have access to a specific CSS file.
+
+While creating stylesheets take care of the naming conventions of the selectors such that the attacker is not informed what a specific selector is linking to.

@@ -1,0 +1,81 @@
+<!-- Border image is used to specify an image as a border around the HTML element. Border image is a short-hand property to set border-source, border-image-slice, border-width, border-outset, border repeat.
+
+ 
+
+border-image            description
+
+border-source           Path of the image to be used for the border.
+
+border-image-slice      Specifies the values to slice the image. Can have 1 to 4(top, right, bottom, left) values expressed as pixels or %.
+
+border-width            Specifies the width of the border-image.
+
+border-outset           Specifies the amount by which border image area extends beyond border-box.
+
+border-repeat           Specifies whether the edges of the image should be stretched, repeated, rounded or scaled.
+
+
+Border Image slice property specifies how to slice the image.
+
+The image to be added as a border will be divided into 9 sections based on the image slice value of the border-image property.
+
+Once the image is divided into 9 sections. The corners of the image would be placed at the corners of the element and the edges of the image would be placed at the edges of the element.
+
+The edges of the image are repeated or scaled based on the border-repeat value.
+
+
+
+The border-repeat property specifies whether to stretch, repeat, round or scale the edges of the image.
+
+ 
+
+border-repeat
+
+Description
+
+stretch
+
+Default value. The image is stretched to fill the area between the edges of the border.
+
+repeat
+
+The image is tiled, or repeated until it fills the area between the edges of the border.
+
+space
+
+The image is tiled, or repeated to fill the area between the edges of the border. If the area cannot be filled with a whole number of tiles, the extra space is distributed around the tiles.
+
+round
+
+The image is tiled, or repeated to fill the area between the edges of the border. If it cannot be filled with a whole number of tiles, the image is re-scaled. -->
+
+
+<html>
+<head>
+<title>Border-Image</title>
+<style>
+    #myDIV{ 
+	border: 15px solid transparent; 
+	border-image: url(BorderImage/border.jpg); 
+	border-image-slice: 30; 
+	border-image-repeat: round; 
+	border-image-outset:10px; 
+	height: 50px; 
+	padding: 15px; 
+	width: 200px; 
+} 
+    img
+{
+	margin-left:150px;
+	margin-top:50px;
+	border: 50px solid transparent;
+	border-image:url(BorderImage/frame1.jpg) 13% 17% 14% 15%;
+}
+
+</style>
+</head>
+<body>
+<!-- <img src="BorderImage/monalisa01.jpg" alt="Image cannot be loaded"></img> -->
+<div id="myDIV">This div is applied with border image</div> 
+</body>
+</html>

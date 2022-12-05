@@ -1,0 +1,103 @@
+elector
+
+Description
+
+Example
+
+Child
+
+A>B
+
+ 
+
+Selects any element B that is a direct child of A(ignores the deeper nested elements)
+
+ 
+
+section > p
+
+Adjacent Sibling
+
+A+B
+
+ 
+
+Selects the B element that is placed immediately after the A element and shares the same parent.
+
+This selects only the immediate sibling.
+
+ 
+
+h1 + p
+
+General Sibling
+
+A ~ B
+
+ 
+
+Selects all the B elements that are placed after the A element and share the same parent.
+
+This selects all the siblings.
+
+ 
+
+
+
+
+
+
+
+ If we have a requirement to style an element based on the attribute of the element or based on the value of the attribute of the element.
+
+In this scenario, we can use attribute selectors.
+
+Now let us discuss how to work with attribute selectors.
+
+Attribute Selector
+
+Description
+
+ 
+
+a [attribute]
+
+ 
+
+ 
+
+Selects all A elements with the specified attribute.
+
+ 
+
+a[attribute=value]
+
+ 
+
+Selects all A elements with specified attribute and value.
+
+ 
+
+a[attribute^=value]
+
+ 
+
+Selects all A elements where the value of attribute starts with the specified value.
+
+ 
+
+a[attribute$=value]
+
+ 
+
+Selects all A elements where the value of attribute ends with the specified value.
+
+ 
+
+a[attribute*=value]
+
+ 
+
+Selects all A elements where the value of the attribute contains the specified value.
+
+ 

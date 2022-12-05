@@ -1,0 +1,28 @@
+
+/* We can apply pseudo-classes to link as shown below */
+a:hover {
+  background-color: black;
+  color: white;
+}
+a::visited {
+  color: purple;
+}
+/* We can apply pseudo-classes to input elements as shown below */
+input[type="text"]:enabled {
+  background-color: lightblue;
+}
+input[type="text"]:required {
+  background-color: red;
+}
+
+
+input[type="number"]:enabled {
+  background-color: blue;
+}
+
+
+/* We can apply the :first-letter pseudo-class as shown below */
+p::first-letter {
+  color: #8a2be2;
+  font-size: 200%;
+}

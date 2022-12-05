@@ -1,0 +1,20 @@
+Typography refers to the art of arranging type.
+
+Typography plays a very important role in advertising and sales.
+
+Advertising or branding a product is very important. Consider selling a food product
+
+
+Typography refers to the technique of presenting the text of a website in a legitimate, readable, and appealing way 
+
+Elements of good typography included
+
+Color: Background and text-color
+
+Spacing: letter-spacing,line-height
+
+Font: font-style and font-size
+
+Alignment:  text-align
+
+Observe the below webpage

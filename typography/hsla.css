@@ -1,0 +1,19 @@
+#parent
+{
+	background-color:#2196f3;
+	border: 1px solid white;
+	height:200px;
+	width:200px;
+}
+#child
+{
+	background-color:grey;
+	border: 1px solid white;
+	height:200px;
+	margin-left:50px;
+	margin-top:50px;
+	width:400px;
+	color: HSL(240,100%,50%);
+    background-color: HSLA(128,70%,20%,0.15);
+	color:white;
+}

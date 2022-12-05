@@ -1,0 +1,153 @@
+<!-- Transitions are gradual changes in the properties of an element when it changes from one style to another.
+
+Using CSS3 transition effects can be added to elements without the need for any scripting or additional software like Flash.
+
+To add a transition, two things must be specified:
+
+The CSS property to which the effect should be added.
+
+The duration of the effect.
+
+transition: height 3s;
+Here in the above syntax,
+
+height is the CSS property to be transited
+
+3s is the duration for the animation 
+
+
+
+ransition        Description
+
+transition-property
+
+Includes CSS3 properties that need to be transited over a period of time
+For example height, width, background, color, etc
+It accepts a comma-separated list of properties to be transited.
+It accepts the “all” keyword as a value that specifies that all the properties need to be transited.
+
+transition-duration
+
+Sets the duration (sec/msec) of transition. If this duration is not mentioned then the transition will not have any effect.
+
+transition-timing-function
+Controls the pace/speed of the transition. The key terms used are linear, ease, ease-in, ease-out, ease-in-out, steps.
+
+transition-delay
+
+Specifies the delay before starting the transition.
+
+-------------
+
+
+The transition timing function is used to specify the pace/speed of transition.
+
+This can be done in 2 ways.
+
+Specifying the pre-defined functions.
+
+transition-timing-function
+
+Description
+
+ease
+
+Transition speed will be slow at the start and end and fast pace in between.
+
+linear
+
+Transition speed will be the same throughout.
+
+ease-in
+
+Transition speed will be slow at the start.
+
+ease-out
+
+Transition speed will be slow at the end.
+
+ease-in-out
+
+Transition with slow speed at the start and end and linear speed in between
+
+steps
+
+Allows specifying intervals for the timing function.
+
+Defining a custom function by specifying four co-ordinates to define a cubic bezier curve.
+
+The Cubic Bezier curve is defined by 4 points P0, P1, P2, and P3.
+
+P0 and P3 are the start and end of the curve hence they have values 0 and 1 by default. We specify the x and y coordinate values for P1 and P2 to the cubic bezier curve function.
+
+cubic-bezier(x1,y1,x2,y2)
+In the above syntax,
+x1,y1,x2, and y2 are the x and y-coordinates of points P1 and P2.
+transition-timing-function: ease, linear;
+cubic-bezier(0,1.1,0.8,4)
+ 
+In the above example,
+
+Multiple transition functions can be specified for multiple properties by separating them with a comma.
+
+-------------------
+
+steps() timing function enables us to break the transition into steps.
+
+For example: If I want to transit a square that moves 400px to right on hover in 4 seconds then the square would move 100 pixels to right for every second.
+
+This function accepts 2 arguments.
+
+steps(int, start|end)
+
+The first parameter specifies the number of intervals to which the transition should be broken. This should be a positive number greater than 0.
+
+If the second parameter value is 'start' then the transition will happen at the beginning of each step.
+
+If the second parameter value is 'end' then the transition will happen at the end of each step.
+
+There are 2 pre-defined variants of the steps function
+
+step-start which is equivalent to steps(1, start)
+
+step-end which is equivalent to steps(1, end)
+
+div
+{
+    transition: 4s steps(4);
+}
+div:hover
+{
+    left: 400px;
+}
+Here in the above code snippet,
+
+Line 3: The transition will be broken into 4 intervals.
+-->
+
+
+<html>
+<head>
+    <style>
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        margin-left: 50px;
+        margin-top:50px;
+        transition: 3s linear;
+        }
+        img:hover {
+        width: 200px;
+        height: 200px;
+        margin-left: 400px;
+        transform:rotate(360deg);
+        box-shadow: -5px -5px 5px #888;
+        }
+    </style>
+        
+</head>
+<body>
+<img src="Toy.jpg" alt="ToyImage"></img>
+</body>
+</html>

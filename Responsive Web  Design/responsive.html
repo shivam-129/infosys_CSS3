@@ -1,0 +1,163 @@
+<!-- We can make a web page's layout change according to the screen size using the below techniques
+
+Fluid Layouts
+
+Flexible Images
+
+Media Queries 
+
+Flexible Images 
+
+The image grows or shrinks according to the container dimensions. We need to specify the width of the image using the percentage of its container width.
+
+Setting the width of foreground images
+
+We will apply relative dimensions to the <img> element
+
+Problem: Consider we have an image that needs to be displayed at 150X150 size inside a 720 px wide element and we want it to scale it as the parent element scales.
+
+Solution: For the above problem, we can have a container exclusively for the image, set its relative size on the container, and let the image fill container width.
+
+i.e., 150/720 = 20.8333%
+
+and to scale the image when the parent scales but limit the extent to which it scales up/down we can set max-width/min-width on the parent. 
+
+Setting the width of the background images
+
+Problem: Consider we want the background image to scale when the element for which background is set to scales.
+
+Solution: For the above problem, we can set background-size: 100%
+
+Fluid Layouts
+
+Layout grows and shrinks according to the viewport dimensions. We need to use relative units such as % instead of absolute units (px).
+
+In order to fit the layout to viewport width, we will replace absolute units for dimensions of elements(px) with relative units (%)
+
+The width of the topmost element (<html>) is browser width (due to viewport tag)
+
+Thus specifying the width of all elements using % will scale the layout to the viewport width. Such a layout is called fluid layout 
+
+We need to represent all px widths as % of the corresponding parent width.
+
+Media queries
+
+Media queries apply CSS styling based on the device form factors. Hence the layout can differ on a desktop, tablet, and mobile
+
+@media screen and (max-width: 520px) {
+  .body {
+    background: none;
+  }
+}
+
+Line 1: This media query hides a background image for the element with the class body when the page is viewed on a screen and browser viewport width is lesser than 520px, 
+
+@media starts a media query 
+
+screen: CSS to be applied only to screen media type
+
+max-width: Apply CSS if the screen size is 520px wide, or less 
+
+
+
+------------
+
+Media Types
+
+The important media types are 
+
+Media Type
+
+Description
+
+all
+
+Applies to all devices (default value)
+
+handheld
+
+Applies to handheld devices
+
+print
+
+Applies to printer 
+
+screen
+
+Applies to any type of screen
+
+tv
+
+Applies to TV screens
+
+ 
+
+Media Features
+
+The important media types are 
+
+Feature
+
+Values
+
+min/max
+
+Description
+
+device-height, device-width
+
+number 
+
+Yes
+
+Height/Width of the output device (specified in px, em,  etc.)
+
+height, width
+
+number
+
+Yes
+
+Height/Width of the viewport
+
+orientation
+
+landscape | portrait
+
+No
+
+The orientation of the device 
+
+resolution
+
+number
+
+Yes
+
+Resolution(pixel density) of the device (in dpi, dpcm, etc.)
+
+device 
+
+number
+
+Yes
+
+The number of device pixels per CSS pixel. Used to detect high-resolution screens like iPad retina
+
+ -----------------
+
+
+ It is observed that sometimes mobile devices display a full desktop site. In such cases, the computed page width is much higher than the expected and hence the appropriate media queries will not be applied. It also results in pages being zoomed out on mobile devices.
+
+To overcome the above problem we can use the viewport meta tag
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=0">
+When we set width=device-width the page will be as wide as the device which prevents default zooming out actions on some mobiles
+
+When we set initial-scale=1.0 the page is unscaled initially and cannot be further scaled by the user
+
+The viewport is the area on a browser where the page is rendered.
+
+Viewport width > Browser width > page is wider than browser
+
+-->

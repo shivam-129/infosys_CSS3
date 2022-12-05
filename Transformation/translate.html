@@ -1,0 +1,43 @@
+<!-- CSS3 translate() function is used to move an element from one position to another position.
+
+An element can be moved to the right, left, top, bottom.
+
+Syntax: translate (x,y) -> moves the element to right by x-value, and y-value down from its current position.
+
+An element can be moved in only one direction i.e. horizontal/vertical using translateX and translateY functions.
+
+Example:
+
+translate(20px, 30px) -> moves the element to right by 20px and 30px down from the current position.
+
+translate(-40px, 20px) -> moves the element to left by 40px and 20px down from the current position.
+
+translate(-30px, -25px) -> moves the element to left by 30px and 25px up from the current position. -->
+
+
+<html>
+<head>
+    <title>Translate Demo</title>
+	<style>
+        img
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;
+}
+img#translate
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;
+   transform:translate(45px,70px);
+}
+
+    </style>
+</head>
+<body>
+<br />
+<img src="images/Toy.jpg" alt="Toy"></img>
+<img id="translate" src="images/Toy.jpg" alt="ToyTranslate"></img>
+</body>
+</html>

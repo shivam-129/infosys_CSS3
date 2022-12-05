@@ -1,0 +1,41 @@
+We may want to present our text in a more appealing way like spacing, capitalizing, indenting and underlining, etc
+
+CSS provides the following text properties.
+
+text-align: Specifies the horizontal alignment of the text
+text-align: right;
+
+text-decoration: Specifies whether the text should be underlined or overlined. Values can be none (default), underline, overline, line-through
+text-decoration: underline;
+
+text-transform: Specifies whether the text should be rendered in uppercase, lowercase, or camelcase. Values can be capitalized, uppercase, lowercase.
+text-transform: capitalize;
+
+
+
+
+
+letter-spacing: Specifies the spacing between the letters
+letter-spacing: 90px;
+
+word-spacing: Specifies the spacing between the words
+word-spacing: 90px;
+
+text-indent: Specifies the indentation of the text. Values can be left, right, center and justify
+text-indent: 90px;
+ 
+
+
+
+Text Shadow
+
+The text-shadow property adds a shadow to the text of any HTML element
+
+text-shadow: 10px 6px 2px black;
+The first value specifies the horizontal offset. Positive value creates a shadow to the right. Negative value creates the shadow to the left.
+
+The second value specifies the vertical offset. Positive value creates a shadow to the left. Negative value creates the shadow to the right.
+
+The third value specifies the blur distance. An optional value that decides the percentage of blur effect and takes a positive value.
+
+The fourth value specifies the shadow color.

@@ -1,0 +1,109 @@
+<!-- CSS3 allows us to add shadow to any element in the web page using the box-shadow property.
+
+box-shadow:5px 10px 6px 2px rgba(30,50,40,0.5);
+ 
+In the above example :
+
+5px indicates horizontal offset
+
+10px indicates Vertical offset
+
+6px indicates Blur Distance
+
+2px indicates Spread Distance
+
+rgba(30,50,40,0.5) is used to apply shadow color
+
+ 
+Let us have a glance over these properties and understand how to write with them. 
+ 
+Property
+
+Description
+
+horizontal offset
+Positive value creates a shadow to the right.
+Negative value creates the shadow to the left
+
+vertical offset
+Positive value creates a shadow to the bottom
+Negative value creates the shadow to the top.
+
+spread distance
+Optional value.
+Positive value expands the shadow in all directions.
+Negative value contracts the shadow.
+
+blur distance
+An optional value that decides the percentage of blur effect takes only a positive value.
+
+color
+An optional value that specifies the shadow color.
+
+ 
+
+Best Practice:
+
+Shadow to any element in the webpage can be provided using the box-shadow property.
+Blur radius can be used, which is set to 0 the shadow will be sharp, the higher the number, the more blurred it will be.
+By using the spread radius, positive values increase the size of the shadow, negative values decrease the size. The Default value is 0, where the shadow is the same size as the blur -->
+
+
+<html>
+<head>
+<title>Login Page</title>
+<style>
+    #login_form
+{
+    width: 400px;
+    height: 300px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid #e35d5d;
+    border-radius:20px;
+    box-shadow: 15px 15px 4px;
+ }
+h1 
+{
+    text-align: center;
+    margin: 0 0 20px;
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 20%;
+    height:20%;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont;
+    color: #fff;
+    background-color: #4d90fe;
+    border-radius:20px;
+    box-shadow: 5px 15px 5px rgba(109, 118, 213, 0.5);
+ }
+input:focus
+{
+	outline:0;
+    box-shadow: 5px 5px 5px rgba(30,50,40,0.5);
+} 
+
+</style>
+</head> 
+<body>
+<form id="login_form">
+    <h1>Learners Login</h1>
+    <input type="email" placeholder="Email" required="">
+    <input type="password" placeholder="Enter your password" required="">                 
+    <input id="login_button" type="submit" value="Login"></input> <br><br>
+    <a href="forgotpassword.html">Forgot password?</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="signup.html">Create account</a>
+</form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<meta charset="UTF-8">  
+	<title>Attribute Selectors</title>
+	<style>
+        input[type="text"] {
+    background-color: lightblue;
+    width: 150px;
+}
+input[type="button"] {
+    width: 120px;
+}
+
+    </style>
+</head> 
+<body> 
+	<form>
+		<h1>Login Form</h1> 
+		Username: <input type="text" /><br/><br/>
+		Password: <input type="text" /><br/><br/>
+		<input type="button" value="Login">	
+	</form> 
+</body> 
+</html> 
+
+<!-- 
+In the above code snippet, you can observe that,
+
+Line 1: input[type="text"] will select all input elements with attribute value as text.
+
+Line 6: input[type="button"] will select all input elements with attribute value as button. -->

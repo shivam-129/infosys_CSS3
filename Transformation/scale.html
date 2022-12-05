@@ -1,0 +1,44 @@
+<!-- CSS3 scale() function is used to change(increase/decrease) the size of any element.
+
+Syntax: scale(x,y) -> scales the element width(x-value) & height(y value)
+
+If only one value is supplied to the scale(value) function, then that value will be considered as both x & y parameters
+
+Example:
+
+scale(2,1) -> The width of the element will be doubled and height remains the same.
+scale(0.5) -> will decrease the element size by half
+scale(1)-> element size will remain same
+scale(2)-> doubles the element size
+
+  -->
+
+
+
+  <html>
+<head>
+    <title>Rotation Demo</title>
+    <style>
+	img
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;;
+}
+img#scale
+{
+   width:200px;
+   height:200px;
+   border:1px solid black;
+   margin-top:70px;
+   transform:scale(1.5,1.5);
+}
+</style>
+
+</head>
+<body>
+<br />
+<img src="images/Toy.jpg" alt="Toy"></img>
+<img id="scale" src="images/Toy.jpg" alt="ToyTranslate"></img>
+</body>
+</html>

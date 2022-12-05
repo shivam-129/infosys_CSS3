@@ -1,0 +1,97 @@
+<!-- CSS pseudo-class is a keyword that can be applied to selectors. 
+  Pseudo-classes specifies the state of the element to be selected
+
+Link related pseudoclasses
+The link is highlighted when hovered. This is achieved using :hover pseudoclass
+The visited links appear in purple color. This is achieved using :visited pseudo class
+
+
+
+Input related pseudo-classes
+The Last Name is an enabled text field, which is applied with light blue background-color using :enabled pseudoclass. The Last Name field is a mandatory field, which is applied with red background-color using :required pseudoclass.
+
+
+
+The first letter of the paragraph is rendered in bigger font-size and purple color using the :first-letter pseudo-class.
+
+ -->
+
+
+
+
+
+
+
+<!-- 
+Element Selector
+
+We can style the elements by selecting them using element selector as shown below -->
+
+<style>
+body {
+  background-color: lightgrey;
+}
+/* ------------------------------------ */
+
+/* Id Selector
+
+We can use the id selector as shown below */
+
+#pid {
+  background-color: yellow;
+  color: green;
+}
+/* <!-- We can add an id attribute to the HTML element as shown below --> */
+
+
+
+
+/* Class selectors
+
+Class selectors can be used as shown below */
+
+.red {
+    color: red;
+}
+
+
+/* Contextual Selectors
+
+We can use contextual selectors as shown below */
+
+div p {
+  background-color: yellow;
+  color: green;
+}
+
+
+/* Grouping of Selectors
+We can group the selectors as shown below */
+
+h1,h2,h3 {
+  color: maroon;
+}
+
+</style>
+
+<p id="pid">Paragraph1</p>
+
+
+
+
+<!-- We apply a class to the HTML using the class attribute -->
+
+<p class="red">Paragraph1</p>
+<p class="red">Paragraph2</p>
+
+
+------------------------------------
+
+
+<div>
+    <p class="red">Paragraph1</p>
+    <p class="red">Paragraph2</p>
+</div>
+
+-------------------------------------
+

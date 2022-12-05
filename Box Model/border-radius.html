@@ -1,0 +1,90 @@
+<!-- Border property adds a sharp border to our HTML element.
+
+If we need rounded corners for our border, we can achieve the requirement using the border-radius property of CSS3.
+
+We can use slashes(“/”) between 2 values to specify elliptical corners.
+
+Ex : border-radius: 10px/20px; /* horizontal radius/vertical radius */
+
+Border radius is short-hand property. Border radius value can be expressed using px or %. Percentage(%) is used when we want border-radius to be directly correlated with elements width.
+
+border-radius is combinations of the below four properties. 
+
+border-top-left: can be used to provide top left radius
+
+border-top-right: can be used to provide top right radius
+
+border-bottom-right: can be used to provide bottom right radius
+
+border-bottom-left: can be used to provide bottom left radius
+
+In border-radius CSS property:
+
+if only one value is set, this radius applies to all 4 corners.
+
+If two values are set, the first value applies to top-left and bottom-right corner, the second value applies to top-right and bottom-left corner.
+
+If all values are set, they apply to the top-left, top-right, bottom-right, bottom-left corner in that particular order.
+
+Note: Perfect Border can be applied to HTML Element using border-radius property. -->
+
+
+<html>
+<head>
+<title>Border-radius</title>
+<style>
+#login_form
+{
+    width: 400px;
+    height: 300px;
+    margin-top:50px;
+    margin-left:80px;
+    padding: 20px;
+    border: 2px solid #808080;
+    border-radius: 20px /40px
+    /* oval shape */
+ }
+h1 
+{
+    text-align: center;
+    margin: 0 0px 20px; 
+    /* top left/right bottom; */
+}
+input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid grey;
+    border-radius:20px;
+}
+#login_button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 20%;
+    height:20%;
+    border: 1px solid hsla(0,72%,27%,0);
+    font: bold 1.2em myFirstFont;
+    color: #fff;
+    background-color: #4d90fe;
+    border-radius:20px;
+   
+ }
+input:focus
+{
+	outline:0;   
+} 
+
+</style>
+    </head>
+<body>
+    <form id="login_form">
+        <h1>Learners Login</h1>
+        <input type="email" placeholder="Email" required="">
+        <input type="password" placeholder="Enter your password" required="">                 
+        <input id="login_button" type="submit" value="Login"></input> <br><br>
+                          
+        <a href="forgotpassword.html">Forgot password?</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="signup.html">Create account</a>
+    </form>
+</body>
+</html>
